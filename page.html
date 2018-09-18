@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta charset="utf-8">
-<title>Page Title</title>
+<title>RR puslapis</title>
 </head>
 <body>
 <div class="jumbotron text-center">
@@ -15,8 +15,8 @@
  <h2>Jūsų norimas variklis</h2>
   <p>Apačioje yra nurodyti tinkamiauso pasirinkimo kriterijai:</p>
   <form>
-      <label for="sel1">Tipas:</label>
-      <select class="form-control" id="sel1">
+      <label for="tipas_select">Tipas:</label>
+      <select class="form-control" id="tipas_select">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -24,37 +24,37 @@
       </select>
         <form>
         	<div class="form-group">
-  <label for="usr">Prioritetas %:</label>
-  <input type="text" class="form-control" id="usr" placeholder="%">
+  <label for="tipas_proc">Prioritetas %:</label>
+  <input type="text" class="form-control" id="tipas_proc" placeholder="%">
 </div>
 
-      <label for="sel1">Firma:</label>
-      <select class="form-control" id="sel1">
+      <label for="firma_select">Firma:</label>
+      <select class="form-control" id="firma_select">
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select>
       <div class="form-group">
-  <label for="usr">Prioritetas %:</label>
-  <input type="text" class="form-control" id="usr" placeholder="%">
+  <label for="firma_proc">Prioritetas %:</label>
+  <input type="text" class="form-control" id="firma_proc" placeholder="%">
 </div>
 <div class="form-group">
-  <label for="usr">Kaina:</label>
-  <input type="text" class="form-control" id="usr">
+  <label for="kaina">Kaina:</label>
+  <input type="text" class="form-control" id="kaina">
 </div>
 <div class="form-group">
-  <label for="usr">Galia:</label>
-  <input type="text" class="form-control" id="usr">
+  <label for="galia">Galia:</label>
+  <input type="text" class="form-control" id="galia">
 </div>
 <div class="col-md-4 text-center"> 
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Surasti</button> 
+    <button id="surasti" name="singlebutton" class="btn btn-primary">Surasti</button> 
 </div>
     </div>
     <div class="col-sm-4">
   <h2>Visi varikliai</h2>
   <p>Šiuo metu sandely esantis varikliai:</p>            
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="visi_varikliai">
     <thead>
       <tr>
         <th>Tipas</th>
@@ -75,7 +75,7 @@
     </div>
     <div class="col-sm-4">
 <h2>Geriausias variklis</h2>        
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="tinkamiausias_variklis">
     <thead>
       <tr>
         <th>Tinkamiausias</th>
