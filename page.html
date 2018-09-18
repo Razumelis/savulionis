@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="app.js"></script>
+<!-- <script src="Variklis.js"></script> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta charset="utf-8">
 <title>RR puslapis</title>
 </head>
-<body>
+<body onload="onLoad()">
 <div class="jumbotron text-center">
   <h1>Geriausi varikliai</h1>
 </div>
@@ -17,10 +19,10 @@
   <form>
       <label for="tipas_select">Tipas:</label>
       <select class="form-control" id="tipas_select">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+        <option>V4</option>
+        <option>V6</option>
+        <option>V8</option>
+        <option>V12</option>
       </select>
         <form>
         	<div class="form-group">
@@ -30,10 +32,9 @@
 
       <label for="firma_select">Firma:</label>
       <select class="form-control" id="firma_select">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+        <option>Audi</option>
+        <option>Bmw</option>
+        <option>Fiat</option>
       </select>
       <div class="form-group">
   <label for="firma_proc">Prioritetas %:</label>
@@ -48,7 +49,7 @@
   <input type="text" class="form-control" id="galia">
 </div>
 <div class="col-md-4 text-center"> 
-    <button id="surasti" name="singlebutton" class="btn btn-primary">Surasti</button> 
+    <button onclick="btnSubmit()" id="surasti" name="singlebutton" class="btn btn-primary" type="button">Surasti</button> 
 </div>
     </div>
     <div class="col-sm-4">
@@ -63,7 +64,7 @@
         <th>Galia</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id = "listas">
       <tr>
         <td>Tipas</td>
         <td>Kaina</td>
@@ -74,14 +75,15 @@
   </table>
     </div>
     <div class="col-sm-4">
-<h2>Geriausias variklis</h2>        
+<h2>Geriausias variklis</h2>
+<p>Skaiciavimai</p>  
   <table class="table table-bordered" id="tinkamiausias_variklis">
     <thead>
       <tr>
-        <th>Tinkamiausias</th>
+        <th>Gautas skirtumas</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id = "skaiciuListas">
       <tr>
         <td>Tinkamiausias</td>
       </tr>
