@@ -67,22 +67,23 @@ function btnSubmit()
         var tipasskirtumas;
         var firmaskirtumas;
         var kainuS;
-        if(selectionTipas == list[i].tipas){
+        if(selectionTipas === list[i].tipas){
             tipasskirtumas = 0;
         }
         else{
             tipasskirtumas = 1;
         }
-        if(selectionFirma == list[i].firma){
+        if(selectionFirma === list[i].firma){
             firmaskirtumas = 0;
         }
         else{
-            firmaskirtumas= 1;
+            firmaskirtumas = 1;
         }
         var ats = Math.sqrt(Math.pow((list[i].kaina - selectionKaina)/43, 2) + Math.pow((list[i].galia - selectionGalia)/10, 2) + tipasskirtumas + firmaskirtumas);
-        console.log(ats);
         
-        htmlstring = htmlstring + '<tr><td>'+ats+'</td></tr>';
+        //htmlstring = htmlstring + '<tr><td>'+ats+'</td></tr>';
+        //htmlstring = htmlstring + '<tr><td>'+Math.sqrt(Math.pow((list[i].kaina - selectionKaina), 2))/1300+'</td><td>'+Math.sqrt(Math.pow((list[i].galia - selectionGalia), 2))/300+'</td></tr>'
+        htmlstring = selectionTipasProc + " " + selectionFirmaProc;
 
     }
     document.getElementById("skaiciuListas").innerHTML = htmlstring;
