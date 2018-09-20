@@ -51,9 +51,9 @@ function onLoad(){
 function btnSubmit()
 {
     var selectionTipas = document.getElementById("tipas_select").value;
-    var selectionTipasProc = document.getElementById("tipas_proc").value;
+    //var selectionTipasProc = document.getElementById("tipas_proc").value;
     var selectionFirma = document.getElementById("firma_select").value;
-    var selectionFirmaProc = document.getElementById("firma_proc").value;
+    //var selectionFirmaProc = document.getElementById("firma_proc").value;
     var selectionKaina = document.getElementById("kaina").value;
     var selectionGalia = document.getElementById("galia").value;
 
