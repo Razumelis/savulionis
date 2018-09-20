@@ -81,9 +81,9 @@ function btnSubmit()
         }
         var ats = Math.sqrt(Math.pow((list[i].kaina - selectionKaina)/43, 2) + Math.pow((list[i].galia - selectionGalia)/10, 2) + tipasskirtumas + firmaskirtumas);
         
-        //htmlstring = htmlstring + '<tr><td>'+ats+'</td></tr>';
+        htmlstring = htmlstring + '<tr><td>'+ats+'</td></tr>';
         //htmlstring = htmlstring + '<tr><td>'+Math.sqrt(Math.pow((list[i].kaina - selectionKaina), 2))/1300+'</td><td>'+Math.sqrt(Math.pow((list[i].galia - selectionGalia), 2))/300+'</td></tr>'
-        htmlstring = selectionTipasProc + " " + selectionFirmaProc;
+        //htmlstring = selectionTipasProc + " " + selectionFirmaProc;
 
     }
     document.getElementById("skaiciuListas").innerHTML = htmlstring;
