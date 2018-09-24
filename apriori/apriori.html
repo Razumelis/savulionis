@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta charset="utf-8">
+<title>RR puslapis</title>
+</head>
+<body onload="onLoad()">
+<div class="jumbotron text-center">
+  <h1>Apriori algoritmas (Asociatyvumas)</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+ <h2>Variklis:</h2>
+<div class="checkbox">
+  <label><input type="checkbox" id="Čipavimas" value="">Čipavimas</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" id="Aptarnavimas" value="">Aptarnavimas</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" id="Montavimas" value="">Montavimas</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" id="Pristatymas" value="">Pristatymas</label>
+</div>
+<div class="col-md-4 text-center"> 
+    <button onclick="btnSubmit()" id="surasti" name="singlebutton" class="btn btn-primary" type="button">Surasti</button> 
+</div>
+    </div>
+    <div class="col-sm-4">
+  <h2>Duomenys:</h2>
+<table class="table table-bordered" id="variklio_duomenys">
+    <tbody id = "variklio_duom_listas">
+      <tr>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="col-sm-4">
+<h2>Rezultatai:</h2>
+  <table class="table table-bordered" id="variklio_rezultatai">
+    <tbody id = "variklio_rez_listas">
+      <tr>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
